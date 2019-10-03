@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SplashScreen">
+
+    <RelativeLayout
+        android:id="@+id/icon_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/banktxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/logo"
+            android:layout_alignBottom="@+id/logo"
+            android:text="BANK"
+            android:fontFamily="@font/nexabold"
+            android:textColor="#fff"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="-15dp"
+            android:textSize="65sp"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

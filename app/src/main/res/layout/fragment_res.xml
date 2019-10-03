@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_shadow_start_color">
+
+
+    <ImageView
+        android:id="@+id/bglogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/path"/>
+
+    <LinearLayout
+        android:id="@+id/BodyLay"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/distance"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/numbtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="80sp"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_above="@+id/distancetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="person"
+                android:fontFamily="@font/nexabold"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/nexabold"
+            android:id="@+id/distancetxt"
+            android:layout_below="@+id/distance"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1KM"
+            android:textSize="24sp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:fontFamily="@font/nexabold"
+            android:id="@+id/timetxt"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/distancetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About 15 min"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+    <Button
+        android:fontFamily="@font/nexabold"
+        android:id="@+id/ticketbtn"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Book your ticket !!"
+        android:layout_below="@+id/BodyLay"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#008577"
+        android:background="@drawable/custom_btn"/>
+
+
+</RelativeLayout>
